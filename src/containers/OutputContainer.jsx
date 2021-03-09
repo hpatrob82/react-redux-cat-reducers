@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
     return {
-        activity: state.activity
+        activity: state.activity,
+        name: state.name
     }
 }
 

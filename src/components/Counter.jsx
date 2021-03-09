@@ -2,6 +2,8 @@ import Output from '../containers/OutputContainer';
 import Eat from '../containers/EatContainer';
 import Nap from '../containers/NapContainer';
 import Play from '../containers/PlayContainer';
+import SetName from '../containers/SetNameContainer';
+import Activity from '../containers/ActivityContainer';
 
 const Counter = (props) => (
     <>
@@ -10,6 +12,8 @@ const Counter = (props) => (
 <Eat />
 <Nap />
 <Play />
+<Activity />
+<SetName />
 
     </>
 );

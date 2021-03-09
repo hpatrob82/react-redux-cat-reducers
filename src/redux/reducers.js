@@ -1,4 +1,4 @@
-import { ACTION_EAT, ACTION_NAP, ACTION_PLAY } from './actionTypes';
+import { ACTION_EAT, ACTION_NAP, ACTION_PLAY, ACTION_SET_NAME, ACTION_SET_ACTIVITY } from './actionTypes';
 
 export function activity(state, action) {
     switch (action.type) {
@@ -13,6 +13,14 @@ export function activity(state, action) {
         case ACTION_PLAY:
             return {
                 activity: 'playing'
+            }
+        case ACTION_SET_NAME:
+            return {
+                name: state.name + action.payload,
+            }
+        case ACTION_SET_ACTIVITY:
+            return {
+                activity: state.activity + action.payload
             }
         default:
             return state;

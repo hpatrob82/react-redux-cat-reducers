@@ -1,10 +1,11 @@
 import { createStore } from 'redux';
 import { activity } from './reducers';
+// import { name } from './reducers'
 
 
 const defaultState = {
-    activity: 'eating',
-
+    name: 'Guster',
+    activity: 'blep'
 };
 
 
